@@ -1,0 +1,6 @@
+C:\git\GraphAlgorithm\GraphAlgorithm\bin\Release\input.txt
+C:\git\GraphAlgorithm\GraphAlgorithm\bin\Release\GraphAlgorithm.exe.config
+C:\git\GraphAlgorithm\GraphAlgorithm\bin\Release\GraphAlgorithm.exe
+C:\git\GraphAlgorithm\GraphAlgorithm\bin\Release\GraphAlgorithm.pdb
+C:\git\GraphAlgorithm\GraphAlgorithm\obj\Release\GraphAlgorithm.exe
+C:\git\GraphAlgorithm\GraphAlgorithm\obj\Release\GraphAlgorithm.pdb
