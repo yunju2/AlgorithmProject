@@ -9,10 +9,7 @@ namespace GraphAlgorithm
 {
     class Program
     {
-        // 1. GraphNode
-        // 2. Graph
-        // 3. Algorithm
-
+    
         static void Main(string[] args)
         {
             Console.ReadKey();
@@ -30,29 +27,27 @@ namespace GraphAlgorithm
             deltaTime = (DateTime.Now - time).TotalMilliseconds;
             Console.WriteLine($"DFS spent time : {deltaTime}ms. visits:{graph.visits.Count}");
 
-            //graph.Reset();
-            //time = DateTime.Now;
-            //graph.BFS();
-            //deltaTime = (DateTime.Now - time).TotalMilliseconds;
-            //Console.WriteLine($"BFS spent time : {deltaTime}ms. visits:{graph.visits.Count}");
+            graph.Reset();
+            time = DateTime.Now;
+            graph.BFS();
+            deltaTime = (DateTime.Now - time).TotalMilliseconds;
+            Console.WriteLine($"BFS spent time : {deltaTime}ms. visits:{graph.visits.Count}");
 
-            //graph.Reset();
-            //time = DateTime.Now;
-            //graph.BestFristSearch();
-            //deltaTime = (DateTime.Now - time).TotalMilliseconds;
-            //Console.WriteLine($"Best First Search spent time : {deltaTime}ms. visits:{graph.visits.Count}");
+            graph.Reset();
+            time = DateTime.Now;
+            graph.BestFristSearch();
+            deltaTime = (DateTime.Now - time).TotalMilliseconds;
+            Console.WriteLine($"Best First Search spent time : {deltaTime}ms. visits:{graph.visits.Count}");
+            
             graph.PrintResult();
 
-            // 1. 시작점
-            // 2. 끝점
-            // 3. 노드
-
-            //GraphNode[][] nodes
+          
             Console.ReadLine();
         }
 
         static string[][] LoadFile(string filePath)
-        {
+        { 
+
             var lines = File.ReadAllLines(filePath);
             var datas = new List<string>();
             int index = 0;

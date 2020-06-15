@@ -129,77 +129,7 @@ namespace GraphAlgorithm
             }
         }
 
-        /*
-          void breadth_first_tree_search (tree T); {
-                queue_of_node Q;
-                node u, v;
-
-                initialize (Q);
-
-                v = root of T;
-
-                visit v;
-                enqueue (Q,v);
-
-                while (not empty (Q)) 
-                {
-                    dequeue (Q,v);
-                    for (each child u of v) 
-                    {
-                        visit u;
-                        enqueue (Q,u); 
-                    }
-                }
-            }
-         */
-        //public void Test()
-        //{
-        //    int[] arr2 = new int[] { 1, 3, 5, 6, 6, 2, 4, 6, 8 };
-        //    int t = 6;
-
-        //    // 한바퀴 돌면서 있는지 없는지 체크를한다.
-
-        //    // 있으면 있다
-        //    // 없으면 없다
-
-        //    // t가 arr2안에 몇개 있는지
-        //    bool isPresent = false;
-        //    for (int k = 0; k < arr2.Length; ++k)
-        //    {
-        //        if (t == arr2[k])
-        //        {
-        //            isPresent = true;
-        //        }
-        //    }
-
-        //    if (isPresent == false)
-        //    {
-        //        Console.WriteLine("없다");
-        //    }
-        //    else
-        //    {
-        //        Console.WriteLine("있다.");
-        //    }
-        //}
-
-
-        //public void Test2()
-        //{
-        //    PriorityQueue<int> pq = new PriorityQueue<int>(10, new MyIntComparer());
-        //    pq.Push(10);
-        //    pq.Push(1);
-        //    pq.Push(5);
-        //    pq.Push(7);
-        //    pq.Push(2);
-
-        //    while(pq.Count > 0)
-        //    {
-        //        int value = pq.Top;
-        //        pq.Pop();
-        //        Console.WriteLine(value);
-        //    }
-        //}
-
+     
         public void BFS()
         {
             // 너비 우선 검색
@@ -230,14 +160,7 @@ namespace GraphAlgorithm
                 
             }
         }
-        // 코드 작성
-        // 1. 지금 방문한 node 기준으로 갈 수 있는 곳을 집어넣기 (nears 이용)
-
-        // 2. 방문할 곳 중에는 불필요한 것은 넣지 않는다
-        //    (ex : 한 번 방문했던 곳 (visit)는 넣어도 의미가 없기 때문에 빼도 무방하다. -> a* 예외)
-        // 3.백트래킹을 이용해서 최종 길을 잇는다
-        // 3-1. Parent 변수에 이어준다.
-        // 3-2. 부모 변수(Parent)를 이용해서 내가 어떤길을 통해서 왔는지 표현한다.
+ 
         public void DFS()
         {
             // 깊이 우선 검색
@@ -284,15 +207,11 @@ namespace GraphAlgorithm
 
                 if (node == end)
                 {
-                    // 3-2. 부모 변수(Parent)를 이용해서 내가 어떤길을 통해서 왔는지 표현한다.
+                    
                     break;
                 }
 
-                // 코드 작성
-                // 1. 지금 방문한 node 기준으로 갈 수 있는 곳을 집어넣기 (nears 이용)
-
-                // 2. 방문할 곳 중에는 불필요한 것은 넣지 않는다
-                //    (ex : 한 번 방문했던 곳 (visit)는 넣어도 의미가 없기 때문에 빼도 무방하다. -> a* 예외)
+                
                 for (int i = 0; i < node.Nears.Count; ++i)
                 {
                     GraphNode temp = node.Nears[i];
@@ -309,7 +228,6 @@ namespace GraphAlgorithm
         public void PrintResult()
         {
             Console.WriteLine($"도착. 탐색 수 : {visits.Count}");
-
             Stack<GraphNode> stack = new Stack<GraphNode>();
             GraphNode temp = end;
             while (temp != null)
@@ -356,7 +274,7 @@ namespace GraphAlgorithm
                         else
                         {
                             Console.Write("_\t");
-                            //Console.Write(arr2[i][j].Weight + "\t");
+                            
                         }
                     }
                 }

@@ -60,7 +60,7 @@ namespace GraphAlgorithm
 
     public class MyIntComparer : IComparer<int>
     {
-        // 5 3 1 7 10
+        
         public int Compare(int x, int y)
         {
             if (x == y)

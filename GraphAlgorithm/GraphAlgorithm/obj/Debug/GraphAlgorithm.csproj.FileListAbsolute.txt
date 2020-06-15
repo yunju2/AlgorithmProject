@@ -1,1 +1,8 @@
 C:\git\GraphAlgorithm\GraphAlgorithm\bin\Debug\GraphAlgorithm.exe
+C:\git\AlgorithmProject\GraphAlgorithm\GraphAlgorithm\bin\Debug\input.txt
+C:\git\AlgorithmProject\GraphAlgorithm\GraphAlgorithm\bin\Debug\GraphAlgorithm.exe.config
+C:\git\AlgorithmProject\GraphAlgorithm\GraphAlgorithm\bin\Debug\GraphAlgorithm.exe
+C:\git\AlgorithmProject\GraphAlgorithm\GraphAlgorithm\bin\Debug\GraphAlgorithm.pdb
+C:\git\AlgorithmProject\GraphAlgorithm\GraphAlgorithm\obj\Debug\GraphAlgorithm.csprojAssemblyReference.cache
+C:\git\AlgorithmProject\GraphAlgorithm\GraphAlgorithm\obj\Debug\GraphAlgorithm.exe
+C:\git\AlgorithmProject\GraphAlgorithm\GraphAlgorithm\obj\Debug\GraphAlgorithm.pdb
